@@ -21,6 +21,7 @@ const Navbar = () => {
                 <button className='text-[#9CA3AF]'>Saved <span className=" text-[#1A2312] rounded-full border w-6 h-6 inline-flex items-center justify-center ml-2 text-white">0</span></button>
             </div>
         </div>
+        
     );
 };
 
