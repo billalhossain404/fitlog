@@ -4,7 +4,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between px-10 mt-10'>
+        <div className='flex justify-between px-38 mt-10'>
 
             <div className='flex gap-3'>
                 <Image className='h-full w-full' src = {logo} alt = "" />

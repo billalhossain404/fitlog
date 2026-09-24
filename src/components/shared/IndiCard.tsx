@@ -10,7 +10,7 @@ interface ICardProps {
 
 const IndiCard = ({ card }: ICardProps) => {
     return (
-        <div className="bg-[#15171D] border border-[#292C33] rounded-2xl overflow-hidden">
+        <div className="bg-[#15171D] border border-[#292C33] rounded-2xl overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-lg">
 
             <Image src={card.image} alt={card.name} width={500} height={300} className="w-full h-[220px] object-cover" />
 
@@ -31,7 +31,7 @@ const IndiCard = ({ card }: ICardProps) => {
 
                 <div className="border-t border-[#292C33] my-5"></div>
 
-                <div className="flex items-center justify-between text-gray-400 text-sm">
+                <div className="flex items-center gap-4 text-gray-400 text-sm">
 
                     <div className="flex items-center gap-2">
                         <FiClock />

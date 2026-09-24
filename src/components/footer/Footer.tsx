@@ -9,7 +9,7 @@ const Footer = () => {
                 <hr className='text-gray-700 mt-10' />
                 <hr className='text-gray-700 mt-10' />
             </div>
-            <div className='text-white flex justify-between p-10'>
+            <div className='text-white flex justify-between mt-10 mb-10 px-38'>
             <div className='flex gap-3'>
                 <Image className='rotate-135' src = {foot} alt = "" ></Image>
                 <p className='font-bold'>FITLOG</p>
