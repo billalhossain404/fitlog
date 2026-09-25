@@ -1,5 +1,4 @@
 import logo from '@/assets/logo.png';
-import MyPlan from '@/app/MyPlan/page';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
