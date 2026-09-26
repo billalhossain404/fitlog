@@ -1,7 +1,8 @@
 import React from "react";
 import { ICard } from "@/type/card.type";
 import Image from "next/image";
-import { FiBookmark, FiCalendar } from "react-icons/fi";
+import PlanButton from "@/components/cardDetails/PlanButton";
+import SaveButton from "@/components/cardDetails/SaveButton";
 
 interface PageDetailsProps {
     params: Promise<{
@@ -23,7 +24,7 @@ const PageDetails = async ({ params }: PageDetailsProps) => {
     ) as ICard;
 
     return (
-        <div className="min-h-screen bg-[#0D0F13] text-white px-38 mt-10">
+        <div className="min-h-screen bg-[#0D0F13] text-white px-4 sm:px-6 lg:px-10 xl:px-16 mt-8 sm:mt-10 pb-10">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
@@ -32,7 +33,7 @@ const PageDetails = async ({ params }: PageDetailsProps) => {
                             alt={singleCard.name}
                             width={600}
                             height={700}
-                            className="w-full h-[440px] lg:h-[620px] object-cover rounded-xl"
+                            className="w-full h-[300px] sm:h-[440px] lg:h-[620px] object-cover rounded-xl"
                         />
                     </div>
 
@@ -129,16 +130,10 @@ const PageDetails = async ({ params }: PageDetailsProps) => {
                             </ol>
                         </div>
 
-                        <div className="flex gap-3 mt-7">
-                            <button className="flex items-center gap-2 bg-[#C7FF00] text-black px-5 py-3 rounded-lg text-sm font-semibold hover:bg-[#b8ed00] transition">
-                                <FiCalendar />
-                                Add to today's plan
-                            </button>
+                        <div className="flex flex-col sm:flex-row gap-3 mt-7">
+                            <PlanButton singleCard = {singleCard} />
 
-                            <button className="flex items-center gap-2 border border-[#292C33] px-5 py-3 rounded-lg text-sm text-white hover:bg-[#15181E] transition">
-                                <FiBookmark />
-                                Save for later
-                            </button>
+                            <SaveButton singleCard={singleCard} />
                         </div>
                     </div>
                 </div>

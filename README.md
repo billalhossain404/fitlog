@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️ FitLog
 
-## Getting Started
+FitLog is a modern workout library and fitness planning web application. It helps users explore different exercises, view workout details, save exercises for later, and create a personal workout plan.
 
-First, run the development server:
+## 🛠️ Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- React Icons
+- REST API
+- Context API
+
+## ✨ Key Features
+
+### 1. 🏋️ Workout Library
+
+Users can explore a collection of different exercises and easily find useful workout information such as:
+
+- Exercise name
+- Muscle groups
+- Equipment
+- Difficulty level
+- Duration
+- Calories burned
+- Rating
+
+### 2. 🔎 Exercise Details
+
+Users can click on any exercise to view its complete details.
+
+The details page provides information about:
+
+- Exercise name
+- Target muscle groups
+- Required equipment
+- Difficulty level
+- Workout duration
+- Calories burned
+- Exercise rating
+
+### 3. 📅 Create Today's Workout Plan
+
+Users can add exercises to their personal workout plan and manage their daily workouts.
+
+The workout plan shows:
+
+- Total exercises
+- Total workout minutes
+- Total calories
+- Selected exercises
+
+Users can add a maximum of 5 exercises to today's plan.
+
+### 4. 🔖 Save Exercises for Later
+
+Users can save exercises that they want to check or complete later.
+
+Saved exercises are available in a separate **Saved** section where users can view the exercises and remove them whenever they want.
+
+### 5. 📊 Sort and Manage Workouts
+
+Users can easily organize their workouts using different sorting options:
+
+- Duration
+- Difficulty
+- Rating
+
+Users can also mark planned exercises as completed or remove them from their workout plan.
+
+## 📱 Responsive Design
+
+FitLog is designed to provide a smooth experience on different screen sizes, including:
+
+- 💻 Desktop
+- 📱 Mobile
+- 📲 Tablet
+
+## 🎯 Project Purpose
+
+The main purpose of FitLog is to provide a simple and organized platform for discovering exercises and managing personal workout routines.
+
+Users can explore workouts, view detailed exercise information, save exercises for later, and create their own daily workout plan.
+
+## 🚀 Getting Started
+
+### Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone YOUR_GITHUB_REPOSITORY_URL
